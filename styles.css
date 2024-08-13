@@ -1,13 +1,18 @@
 .nav-1 {
+    display: flex;
     height: 80px;
     background: #0B2027;
     font-size: 40px;
     display: flex;
+    justify-content:right
+    
 }
 .nav-2 {
+    display: flex;
     height: 80px;
     font-size: 25px;
     background: #40798C;
+    justify-content: space-evenly;
 }
 .container {
     padding: 2rem;
@@ -45,3 +50,35 @@
     border-radius: 50%;
     background-color:
 } 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 450px);
+    grid-template-rows: repeat(2, 350px);
+    gap: 20px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.grid-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
